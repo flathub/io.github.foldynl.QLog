@@ -6,7 +6,7 @@
   <project_license>GPL-3.0-or-later</project_license>
   <name>QLog</name>
   <developer_name>Ladislav Foldyna</developer_name>
-  <summary>Amateur radio logbook software</summary>
+  <summary>Amateur radio logbook</summary>
   <description>
     <p>
       QLog is an Amateur Radio logging application for Linux, Windows and Mac OS. It is based on the Qt framework and uses SQLite as database backend.
