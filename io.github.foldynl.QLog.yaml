@@ -12,8 +12,7 @@ finish-args:
   - --share=network
   - --share=ipc
   - --socket=pulseaudio
-  - --socket=fallback-x11
-  - --socket=wayland
+  - --socket=x11
   - --own-name=org.freedesktop.secrets
   - --env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess
 cleanup-commands:
