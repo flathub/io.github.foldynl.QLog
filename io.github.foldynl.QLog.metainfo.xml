@@ -18,7 +18,7 @@
       <li>Rig and rotator control via Hamlib</li>
       <li>HamQTH and QRZ.com callbook integration</li>
       <li>DX cluster integration</li>
-      <li>LoTW (not currently supported in the Flatpak version), eQSL, QRZ.com, Clublog, HRDLog.net, ON4KST Chat integration (eQSL includes QSL pictures download)</li>
+      <li>LoTW, eQSL, QRZ.com, Clublog, HRDLog.net, ON4KST Chat integration (eQSL includes QSL pictures download)</li>
       <li>Secure Password Storage for all services with password or security token</li>
       <li>Online and Offline map</li>
       <li>Club Member lookup</li>
