@@ -122,6 +122,7 @@ modules:
       - QMAKE_INCDIR+=/app/include/QtWebEngine
       - QMAKE_INCDIR+=/app/include/QtWebEngineCore
       - QMAKE_INCDIR+=/app/include/QtWebEngineWidgets
+      - DEFINES+=QLOG_FLATPAK
     sources:
       - type: git
         url: https://github.com/foldynl/QLog.git
