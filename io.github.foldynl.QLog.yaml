@@ -9,6 +9,7 @@ rename-desktop-file: qlog.desktop
 rename-icon: qlog
 finish-args:
   - --device=all
+  - --device=dri
   - --share=network
   - --share=ipc
   - --socket=pulseaudio
