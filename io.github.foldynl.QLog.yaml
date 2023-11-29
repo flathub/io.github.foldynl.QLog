@@ -19,11 +19,6 @@ cleanup-commands:
   - /app/cleanup-BaseApp.sh
 
 modules:
-  - name: cleanup-flathub-json
-    buildsystem: simple
-    build-commands:
-      - rm -rvf ${FLATPAK_DEST}/flathub.json
-
   - name: hamlib
     sources:
       - type: archive
