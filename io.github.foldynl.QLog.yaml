@@ -1,9 +1,9 @@
 app-id: io.github.foldynl.QLog
 runtime: org.kde.Platform
-runtime-version: '5.15-23.08'
+runtime-version: 5.15-23.08
 sdk: org.kde.Sdk
 base: io.qt.qtwebengine.BaseApp
-base-version: '5.15-23.08'
+base-version: 5.15-23.08
 command: qlog
 rename-desktop-file: qlog.desktop
 rename-icon: qlog
@@ -126,12 +126,10 @@ modules:
     sources:
       - type: git
         url: https://github.com/foldynl/QLog.git
-        tag: v0.29.2
-        commit: e44fc85da9a71237fbe19ad89398a9962454dc99
+        tag: v0.30.0
+        commit: efd019fe6ce853f9669a669056e9be66146a2a74
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-      - type: file
-        path: io.github.foldynl.QLog.metainfo.xml
-    post-install:
-      - install -Dm644 io.github.foldynl.QLog.metainfo.xml /app/share/metainfo/io.github.foldynl.QLog.metainfo.xml
+      - type: patch
+        path: qlog-metainfo.patch
