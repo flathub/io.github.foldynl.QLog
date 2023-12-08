@@ -45,8 +45,8 @@ modules:
       - /share/man
     sources:
       - type: archive
-        url: https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.1/libsecret-0.21.1.tar.gz
-        sha256: 5106cdb7ef9b74cff5666c982e097f1e6cf44eedd705b5999ce46db1cb55ca7c
+        url: https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.2/libsecret-0.21.2.tar.gz
+        sha256: e0b2485addfcf4d4fb5b810ed9f070c72b626d770bf305e5979c3a3858a3022e
         x-checker-data:
           type: anitya
           project-id: 13150
@@ -107,10 +107,12 @@ modules:
           url-template: https://www.arrl.org/tqsl/tqsl-$version.tar.gz
     post-install:
       - rm /app/share/metainfo/org.arrl.trustedqsl.metainfo.xml /app/share/app-info/icons/flatpak/*/org.arrl.trustedqsl.png
-      - for i in 16 32 48 64 128;do mv /app/share/icons/hicolor/${i}x${i}/apps/org.arrl.trustedqsl.png /app/share/icons/hicolor/${i}x${i}/apps/io.github.foldynl.QLog.trustedqsl.png;done
+      - for i in 16 32 48 64 128;do mv /app/share/icons/hicolor/${i}x${i}/apps/org.arrl.trustedqsl.png
+        /app/share/icons/hicolor/${i}x${i}/apps/io.github.foldynl.QLog.trustedqsl.png;done
       - mv /app/share/applications/org.arrl.trustedqsl.desktop /app/share/applications/io.github.foldynl.QLog.trustedqsl.desktop
       - desktop-file-edit --set-key="Name" --set-value="TQSL (QLog)" /app/share/applications/io.github.foldynl.QLog.trustedqsl.desktop
-      - desktop-file-edit --set-key="Icon" --set-value="io.github.foldynl.QLog.trustedqsl" /app/share/applications/io.github.foldynl.QLog.trustedqsl.desktop
+      - desktop-file-edit --set-key="Icon" --set-value="io.github.foldynl.QLog.trustedqsl"
+        /app/share/applications/io.github.foldynl.QLog.trustedqsl.desktop
 
   - name: qlog
     buildsystem: qmake
