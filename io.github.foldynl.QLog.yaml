@@ -33,6 +33,7 @@ modules:
   - name: libsecret
     buildsystem: meson
     config-opts:
+      - -Dcrypto=disabled
       - -Dgtk_doc=false
       - -Dintrospection=false
       - -Dmanpage=false
