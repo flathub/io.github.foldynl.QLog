@@ -133,5 +133,3 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-      - type: patch
-        path: qlog-metainfo.patch
