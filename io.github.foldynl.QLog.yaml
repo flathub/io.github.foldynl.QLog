@@ -110,7 +110,8 @@ modules:
       - for i in 16 32 48 64 128;do mv /app/share/icons/hicolor/${i}x${i}/apps/org.arrl.trustedqsl.png
         /app/share/icons/hicolor/${i}x${i}/apps/io.github.foldynl.QLog.trustedqsl.png;done
       - mv /app/share/applications/org.arrl.trustedqsl.desktop /app/share/applications/io.github.foldynl.QLog.trustedqsl.desktop
-      - desktop-file-edit --set-key="Name" --set-value="TQSL (QLog)" /app/share/applications/io.github.foldynl.QLog.trustedqsl.desktop
+      - desktop-file-edit --set-key="Name" --set-value="TQSL (QLog)"
+        /app/share/applications/io.github.foldynl.QLog.trustedqsl.desktop
       - desktop-file-edit --set-key="Icon" --set-value="io.github.foldynl.QLog.trustedqsl"
         /app/share/applications/io.github.foldynl.QLog.trustedqsl.desktop
 
