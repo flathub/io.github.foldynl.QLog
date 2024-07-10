@@ -128,8 +128,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/foldynl/QLog.git
-        tag: v0.37.0
-        commit: 80e7b4901c725ea453dacb3748af73fa2023b798
+        tag: v0.37.1
+        commit: 643a1643186fcafee6f43daac88768100a9a9404
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
