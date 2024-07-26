@@ -101,10 +101,10 @@ modules:
       - type: archive
         url: https://www.arrl.org/tqsl/tqsl-2.7.3.tar.gz
         sha256: 09af4fb32b633efad4e2ef9bff1ea921b41cf020cd588ea134cea317ad0176cf
-        x-checker-data:
-          type: anitya
-          project-id: 4998
-          url-template: https://www.arrl.org/tqsl/tqsl-$version.tar.gz
+        #x-checker-data:
+        #  type: anitya
+        #  project-id: 4998
+        #  url-template: https://www.arrl.org/tqsl/tqsl-$version.tar.gz
     post-install:
       - rm /app/share/metainfo/org.arrl.trustedqsl.metainfo.xml /app/share/app-info/icons/flatpak/*/org.arrl.trustedqsl.png
       - for i in 16 32 48 64 128;do mv /app/share/icons/hicolor/${i}x${i}/apps/org.arrl.trustedqsl.png
