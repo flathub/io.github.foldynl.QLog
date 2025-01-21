@@ -56,8 +56,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.14.3.tar.gz
-        sha256: a22c708f351431d8736a0ac5c562414f2b7bb919a6292cbca1ff7ac0849cb0a7
+        url: https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.15.0.tar.gz
+        sha256: f4254dc8f0933b06d90672d683eab08ef770acd8336e44dfa030ce041dc2ca22
         x-checker-data:
           type: anitya
           project-id: 4138
@@ -131,8 +131,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/foldynl/QLog.git
-        tag: v0.41.0
-        commit: 67aa3ed2b2571891229c188c34ceab23001d4b6c
+        tag: v0.41.1
+        commit: c84cd18d2ee387244dd1489fce6a9a352489f1c3
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
