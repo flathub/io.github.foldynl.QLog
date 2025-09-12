@@ -102,8 +102,8 @@ modules:
     sources:
       - type: git
         url: https://git.code.sf.net/p/trustedqsl/tqsl
-        tag: v2.8.1
-        commit: 4973cbe1f7b0637c168aa073ba0af11c077b5b5b
+        tag: v2.8.2
+        commit: 96d3f9b28d4406dbce86ab36ddd2184a171c3fea
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
