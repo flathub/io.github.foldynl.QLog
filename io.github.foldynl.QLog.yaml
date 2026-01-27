@@ -1,9 +1,9 @@
 app-id: io.github.foldynl.QLog
 runtime: org.kde.Platform
-runtime-version: '6.8'
+runtime-version: '6.9'
 sdk: org.kde.Sdk
 base: io.qt.qtwebengine.BaseApp
-base-version: '6.8'
+base-version: '6.9'
 command: qlog
 rename-desktop-file: qlog.desktop
 rename-icon: qlog
@@ -13,7 +13,6 @@ finish-args:
   - --share=ipc
   - --socket=pulseaudio
   - --socket=x11
-  - --own-name=org.freedesktop.secrets
   - --env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess
   - --filesystem=home
 cleanup-commands:
