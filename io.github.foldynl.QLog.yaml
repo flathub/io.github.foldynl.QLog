@@ -30,28 +30,6 @@ modules:
           project-id: 1292
           url-template: https://github.com/Hamlib/Hamlib/releases/download/$version/hamlib-$version.tar.gz
 
-  - name: libsecret
-    buildsystem: meson
-    config-opts:
-      - -Dcrypto=disabled
-      - -Dgtk_doc=false
-      - -Dintrospection=false
-      - -Dmanpage=false
-      - -Dvapi=false
-    cleanup:
-      - /bin
-      - /include
-      - /lib/pkgconfig
-      - /share/man
-    sources:
-      - type: archive
-        url: https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.7/libsecret-0.21.7.tar.gz
-        sha256: 944d8a6072b6f285db40b8e9927dbe4dde81dcc7d177f84271fb167ccc297f65
-        x-checker-data:
-          type: anitya
-          project-id: 13150
-          url-template: https://gitlab.gnome.org/GNOME/libsecret/-/archive/$version/libsecret-$version.tar.gz
-
   - name: qtkeychain
     buildsystem: cmake-ninja
     sources:
