@@ -45,8 +45,8 @@ modules:
       - /share/man
     sources:
       - type: archive
-        url: https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.7/libsecret-0.21.7.tar.gz
-        sha256: 944d8a6072b6f285db40b8e9927dbe4dde81dcc7d177f84271fb167ccc297f65
+        url: https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.8.2/libsecret-0.21.8.2.tar.gz
+        sha256: 83b63bdf73124e5de7a24653aee518e861daee65f6ec8593d20fb87f3097bd98
         x-checker-data:
           type: anitya
           project-id: 13150
