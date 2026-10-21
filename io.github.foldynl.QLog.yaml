@@ -102,8 +102,8 @@ modules:
     sources:
       - type: git
         url: https://git.code.sf.net/p/trustedqsl/tqsl
-        tag: v2.8.6
-        commit: 6ce824363e27da455c6cf6fd440b9c401945bfcb
+        tag: v2.8.7
+        commit: aeb2dc774c46a6857a49611c4aca8ed514a2cb36
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -130,8 +130,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/foldynl/QLog.git
-        tag: v0.53.0
-        commit: cbb75f2f2555a4a84c9761e38075754f4821c27c
+        tag: v0.54.0
+        commit: 4e1c124fbaa4142f53b30798ede29c4ff88d3902
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
