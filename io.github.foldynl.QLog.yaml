@@ -28,7 +28,8 @@ modules:
         x-checker-data:
           type: anitya
           project-id: 1292
-          url-template: https://github.com/Hamlib/Hamlib/releases/download/$version/hamlib-$version.tar.gz
+          url-template: 
+            https://github.com/Hamlib/Hamlib/releases/download/$version/hamlib-$version.tar.gz
 
   - name: libsecret
     buildsystem: meson
@@ -45,12 +46,14 @@ modules:
       - /share/man
     sources:
       - type: archive
-        url: https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.8.2/libsecret-0.21.8.2.tar.gz
+        url: 
+          https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.8.2/libsecret-0.21.8.2.tar.gz
         sha256: 83b63bdf73124e5de7a24653aee518e861daee65f6ec8593d20fb87f3097bd98
         x-checker-data:
           type: anitya
           project-id: 13150
-          url-template: https://gitlab.gnome.org/GNOME/libsecret/-/archive/$version/libsecret-$version.tar.gz
+          url-template: 
+            https://gitlab.gnome.org/GNOME/libsecret/-/archive/$version/libsecret-$version.tar.gz
 
   - name: qtkeychain
     buildsystem: cmake-ninja
@@ -84,12 +87,14 @@ modules:
       - /lib/cmake
     sources:
       - type: archive
-        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.12/wxWidgets-3.2.12.tar.bz2
+        url: 
+          https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.12/wxWidgets-3.2.12.tar.bz2
         sha256: a62719bb5e1dcc41c1a6fc1eecd499c7ee8521f70402c7b1bb3342a1e16344e0
         x-checker-data:
           type: anitya
           project-id: 5150
-          url-template: https://github.com/wxWidgets/wxWidgets/releases/download/v$version/wxWidgets-$version.tar.bz2
+          url-template: 
+            https://github.com/wxWidgets/wxWidgets/releases/download/v$version/wxWidgets-$version.tar.bz2
 
   - name: tqsl
     buildsystem: cmake-ninja
@@ -130,8 +135,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/foldynl/QLog.git
-        tag: v0.54.0
-        commit: 4e1c124fbaa4142f53b30798ede29c4ff88d3902
+        tag: v0.54.1
+        commit: 40b1651a644e557ec1579d52c5c0cb9a422a2627
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
